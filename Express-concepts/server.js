@@ -12,6 +12,7 @@ app.use(requestLogger);
 app.use(addTimeStamp);
 app.use(express.json);
 app.use(configureCors());
+app.use(globalErrorHandler);
 
 app.listen(PORT, () => {
     console.log('Server is running on port', PORT);
