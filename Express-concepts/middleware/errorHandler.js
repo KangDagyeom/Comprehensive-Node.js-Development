@@ -33,4 +33,4 @@ const globalErrorHandler = (err, req, res, next) => {
   }
 };
 
-module.exports = { asyncHandler, globalErrorHandler };
+module.exports = { asyncHandler, globalErrorHandler, APIError };
